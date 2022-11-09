@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./Css/metodos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <script src="./Javascript/chart.js"></script>
+    <title>Metodos</title>
+</head>
+
+<body>
+    <header class="bloque header">
+        <div class="centrar">
+            <div class="logo">
+                <img src="./imagenes/logo1.jpeg" alt="" width="60px" height="60px">
+            </div>
+            <nav class="menu-principal">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="materias.html">MATERIAS</a></li>
+                    <li><a href="analisis.html">ANALISIS</a></li>
+                    <li><a href="arquitectura.html">ARQUITECTURAS</a></li>
+                    <li><a href="moviles.html">MOVILES</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="centrar">
+            <div class="img-pre">
+                <h1>Metodos Numericos</h1> <br>
+                <p>Interpolacion Lineal</p><br>
+                <img src="./diagramas/DiagramaM.jpg" alt=""><br>
+                <img src="./diagramas/DiagramaM1.jpg" alt=""> 
+            </div>
+        </div>
+</header><br>
+<h1>Calculadora de Interpolacion Lineal</h1>
+<div class="interpolacion">
+<form id="Interpolación" name="">
+  <label>X</label>
+  <input type="number" name="" id="numero1" autofocus placeholder="Escribe un número">
+  <button onclick="limpiar();">Limpiar Campos</button>
+
+  <br>
+  <br>
+
+  <label>X0</label>
+  <input type="number" name="" id="numero2"
+  placeholder="Escribe un número">
+
+  <br>
+  <br>
+  
+  <label>fX0</label>
+  <input type="number" name="" id="numero3"
+  placeholder="Escribe un número">
+
+  <br>
+  <br>
+
+  <label>X1</label>
+  <input type="number" name="" id="numero4"
+  placeholder="Escribe un número">
+
+  <br>
+  <br>
+  
+  <label>fX1</label>
+  <input type="number" name="" id="numero5"
+  placeholder="Escribe un número">
+
+  <br>
+  <br>
+
+  <button type="button" onclick="solucionar();">Solución
+</button>
+
+<p>El Procedimiento es: <span id="primerR"></span></p>
+
+<br>
+
+<p>=><span id="segundoR"></span></p>
+
+<br>
+
+<p>=><span id="tercerR"></span></p>    
+
+<br>
+
+<p>=><span id="cuartoR"></span></p>
+
+<br>
+
+<p>=><span id="quintoR"></span></p>
+
+<br>
+
+<p>El resultado es: <span id="respuesta"></span></p>
+
+<br>
+
+<input type="number" name="" id="error"
+  placeholder="Escribe el valor verdadero">
+
+  <br> <br>
+
+  <button type="button" onclick="solucionar();">Calcular
+</button>
+
+<br> <br>
+
+<p>El Error verdadero es: <span id="errorVerdadero"></span></p>
+
+<p>El Error porcentual es: <span id="errorPorcentual"></span></p>
+</form> </div>
+
+
+<script src="./Javascript/InterpolacionLineal.js"></script>
+
+<div>
+    <canvas class="Cosa">
+
+    </canvas>
+    </div>
+</div>
+</body>
+</html>
